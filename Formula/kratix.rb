@@ -5,21 +5,21 @@
 class Kratix < Formula
   desc "CLI-based tool to build Promises"
   homepage "https://docs.kratix.io/main/kratix-cli/intro"
-  version "0.19.2"
+  version "0.19.3"
   license "Apache-2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/syntasso/kratix-cli/releases/download/v0.19.2/kratix-cli_Darwin_x86_64.tar.gz"
-      sha256 "0d378a7b491680004af24b8d483f2abaccefc9fbcaa49063732173d42d8f6df4"
+      url "https://github.com/syntasso/kratix-cli/releases/download/v0.19.3/kratix-cli_Darwin_x86_64.tar.gz"
+      sha256 "210cda27308fd8a2f9071c0c7a3c5d09a9444e56290c5edb9cf9bf09fc28bf9c"
 
       def install
         bin.install "kratix"
       end
     end
     on_arm do
-      url "https://github.com/syntasso/kratix-cli/releases/download/v0.19.2/kratix-cli_Darwin_arm64.tar.gz"
-      sha256 "09dce33c4a175f96ecf2a30678880261e53dfb7165725a408724911d8e8bdad4"
+      url "https://github.com/syntasso/kratix-cli/releases/download/v0.19.3/kratix-cli_Darwin_arm64.tar.gz"
+      sha256 "9685ff7c006fee8c27edc68111bcac9b4801f86562603255193444835a445a45"
 
       def install
         bin.install "kratix"
@@ -30,8 +30,8 @@ class Kratix < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/syntasso/kratix-cli/releases/download/v0.19.2/kratix-cli_Linux_x86_64.tar.gz"
-        sha256 "81e7e5f311cc179837de3317dda34d8f160fe945acb2b599674cadb1cf151f62"
+        url "https://github.com/syntasso/kratix-cli/releases/download/v0.19.3/kratix-cli_Linux_x86_64.tar.gz"
+        sha256 "cd56446d59afb0bb623c923c3d00f83bec6b2bf71c874440a550503a418c8652"
 
         def install
           bin.install "kratix"
@@ -40,8 +40,8 @@ class Kratix < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/syntasso/kratix-cli/releases/download/v0.19.2/kratix-cli_Linux_arm64.tar.gz"
-        sha256 "1fb5379ae89a7ed89f9247c881d7b80a1a1c57d71d7f1ac0d1090f62b465a56b"
+        url "https://github.com/syntasso/kratix-cli/releases/download/v0.19.3/kratix-cli_Linux_arm64.tar.gz"
+        sha256 "478bfb876a461a8be68afaae29c625367664d120489ce9daa1890d53ffe7f898"
 
         def install
           bin.install "kratix"
